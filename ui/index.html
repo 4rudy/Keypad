@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cafcb3e7a8.js" crossorigin="anonymous"></script>
+    <title>4rd-keypad</title>
+</head>
+
+<body class="font-inter select-none hidden">
+    <div class="container">
+        <div id="keypadBody" class="keypad-body">
+            <div class="block">
+                <div class="input-container">
+                    <input id="passwordInput" type="text" pattern="\d*" maxlength="8" class="password-input">
+                </div>
+                <div class="status-container">
+                    <div id="status" class="status">WAITING</div>
+                </div>
+                <div class="numpad-container">
+                    <div onclick="numpad('1')" class="numpad-button">1</div>
+                    <div onclick="numpad('2')" class="numpad-button">2</div>
+                    <div onclick="numpad('3')" class="numpad-button">3</div>
+                    <div onclick="numpad('4')" class="numpad-button">4</div>
+                    <div onclick="numpad('5')" class="numpad-button">5</div>
+                    <div onclick="numpad('6')" class="numpad-button">6</div>
+                    <div onclick="numpad('7')" class="numpad-button">7</div>
+                    <div onclick="numpad('8')" class="numpad-button">8</div>
+                    <div onclick="numpad('9')" class="numpad-button">9</div>
+                    <div onclick="numpad('clear')" class="numpad-button clear-button">CLEAR</div>
+                    <div onclick="numpad('0')" class="numpad-button">0</div>
+                    <div onclick="numpad('enter')" class="numpad-button enter-button">ENTER</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
